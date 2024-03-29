@@ -6,7 +6,7 @@ import TopBar from '@/components/TopBar.vue'
 </script>
 
 <template>
-  <v-layout class="rounded rounded-md" style="width: 83vw">
+  <v-layout class="rounded rounded-md" style="width: 100vw">
     <SideBar />
 
     <TopBar />

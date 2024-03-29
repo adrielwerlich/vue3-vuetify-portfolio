@@ -18,7 +18,7 @@ const { locale } = useI18n()
     <v-container>
       <v-row>
         <template v-for="(project, index) in projects" :key="index">
-          <v-col cols="4" v-show="locale === project.fields.language">
+          <v-col cols="12" sm="6" md="4" v-show="locale === project.fields.language">
             <v-card
               height="200"
               style="
