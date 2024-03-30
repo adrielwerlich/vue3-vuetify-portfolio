@@ -18,7 +18,7 @@ const { locale } = useI18n()
     <v-container>
       <v-row>
         <template v-for="(project, index) in projects" :key="index">
-          <v-col cols="12" sm="6" md="4" v-show="locale === project.fields.language">
+          <v-col cols="12" sm="6" md="4" v-show="locale === project.language">
             <v-card
               height="200"
               style="
@@ -29,19 +29,19 @@ const { locale } = useI18n()
               "
             >
               <img
-                :src="project.fields.Image"
+                :src="project.Image"
                 alt="Project Image"
                 height="100"
                 style="position: relative; width: fit-content; align-self: center; bottom: 25px"
               />
 
-              <v-tooltip :text="project.fields.Body" location="bottom">
+              <v-tooltip :text="project.Body" location="bottom">
                 <template v-slot:activator="{ props }">
-                  <h4 v-bind="props">{{ project.fields.Title }}</h4>
+                  <h4 v-bind="props">{{ project.Title }}</h4>
                 </template>
               </v-tooltip>
 
-              <v-btn :href="project.fields.link" target="_blank" color="primary">
+              <v-btn :href="project.link" target="_blank" color="primary">
                 {{ $t('message.seeMore') }}
               </v-btn>
             </v-card>

@@ -3,9 +3,9 @@
     <v-list>
       <v-list-item
         nav
-        title="My Application"
+        :title="$t('message.title')"
         subtitle="Vuetify"
-        prepend-avatar="https://randomuser.me/api/portraits/men/85.jpg"
+        prepend-avatar="./images/avatar-img.png"
       >
         <template v-slot:append>
           <v-btn
